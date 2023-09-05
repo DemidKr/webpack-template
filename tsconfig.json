@@ -2,14 +2,17 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "ESNext",
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-//    "baseUrl": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "ts-node": {
     "compilerOptions": {
